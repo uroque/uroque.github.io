@@ -1,0 +1,14 @@
+.Header {
+  margin-top: 2rem;
+}
+
+.navbar {
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
