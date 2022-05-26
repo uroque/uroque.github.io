@@ -1,3 +1,5 @@
+import './Footer.css';
+
 function Footer() {
   const options = [
     {
@@ -13,7 +15,12 @@ function Footer() {
     <div className="Footer">
       <footer className="Footer">
         {options.map((option) => {
-          return <a href={`${option.link}`}> {option.name} </a>;
+          return (
+            <a className="hover-underline-animation" href={`${option.link}`}>
+              {' '}
+              {option.name}{' '}
+            </a>
+          );
         })}
       </footer>
     </div>

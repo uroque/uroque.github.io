@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Neutral Face Bold';
-  src: url('../fonts/NeutralFace-Bold.otf');
+  src: url('../src/fonts/NeutralFace-Bold.otf');
 }
 
 @font-face {
   font-family: 'Neutral Face';
-  src: url('../fonts/NeutralFace.otf');
+  src: url('../src/fonts/NeutralFace.otf');
 }
 
 body {
@@ -35,7 +35,7 @@ body {
   color: #f1f1f1;
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  width: max-content;
   /* border: solid 2px red; */
 }
 
@@ -56,9 +56,9 @@ body {
   /* border: solid 2px red; */
 }
 
-.homeCenter div {
-  /* border: solid 2px red; */
-}
+/* .homeCenter div {
+  border: solid 2px red; 
+} */
 
 .homeCenter :nth-child(1) {
   font-size: 4rem;
@@ -71,22 +71,6 @@ body {
 
 .homeCenter :nth-child(3) {
   font-size: 4.5rem;
-}
-
-.Footer {
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
-  bottom: 15px;
-  width: 100%;
-}
-
-.Footer a {
-  color: #f1f1f1;
-  text-decoration: none;
-  text-align: center;
-  /* border: solid 2px red; */
-  width: 100%;
 }
 
 .hamburguer-menu {
@@ -109,10 +93,6 @@ body {
 
   .homeCenter :nth-child(3) {
     font-size: 3.5rem;
-  }
-
-  .Footer {
-    bottom: 30px;
   }
 
   .hamburguer-menu {
@@ -187,9 +167,33 @@ body {
     text-decoration: none;
     text-align: center;
     transition-duration: 0.25s;
-    border: solid 2px red;
+    /* border: solid 2px red; */
   }
   .menu__item:hover {
     background-color: #cfd8dc;
   }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #f1f1f1;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

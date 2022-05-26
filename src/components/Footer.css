@@ -1,0 +1,21 @@
+.Footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+}
+
+.Footer a {
+  color: #f1f1f1;
+  text-decoration: none;
+  text-align: center;
+  /* border: solid 2px red; */
+  width: max-content;
+}
+
+@media (max-width: 600px) {
+  .Footer {
+    bottom: 30px;
+  }
+}
