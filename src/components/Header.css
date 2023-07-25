@@ -1,0 +1,17 @@
+.Header {
+  margin-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: calc(10%);
+}
+
+.navbar a {
+  color: #f1f1f1;
+  text-decoration: none;
+  text-align: center;
+  width: max-content;
+  /* border: solid 2px red; */
+}

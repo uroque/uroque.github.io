@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import HamburguerMenu from '../components/HamburguerMenu';
 import Header from '../components/Header';
+// import ResponsiveModal from '../components/ResponsiveModal';
 
 function Home() {
   return (
@@ -10,12 +11,13 @@ function Home() {
       <Header />
       <HamburguerMenu />
       <div className="homeCenter center">
-        <div>ULISSES</div>
-        <div>WEB DEVELOPER</div>
-        <div>ROQUE</div>
+        <span>ULISSES</span>
+        <span>WEB DEVELOPER</span>
+        <span>ROQUE</span>
       </div>
 
       <Footer />
+      {/* <ResponsiveModal /> */}
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import './HamburguerMenu.css';
+
 function HamburguerMenu() {
   return (
     <div className="hamburguer-menu">
@@ -20,6 +22,11 @@ function HamburguerMenu() {
         <li>
           <a class="menu__item" href="/projects">
             Projects
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="/contact_me">
+            Blog
           </a>
         </li>
         <li>
