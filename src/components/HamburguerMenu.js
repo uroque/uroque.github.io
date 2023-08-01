@@ -11,27 +11,27 @@ function HamburguerMenu() {
       <ul class="menu__box">
         <li>
           <a class="menu__item" href="/">
-            Home
+            home
           </a>
         </li>
         <li>
           <a class="menu__item" href="/about">
-            About
+            about
           </a>
         </li>
         <li>
           <a class="menu__item" href="/projects">
-            Projects
+            projects
           </a>
         </li>
         <li>
           <a class="menu__item" href="/contact_me">
-            Blog
+            blog
           </a>
         </li>
         <li>
           <a class="menu__item" href="/contact_me">
-            Contact Me
+            contact Me
           </a>
         </li>
       </ul>
