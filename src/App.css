@@ -8,12 +8,15 @@
   src: url('../src/fonts/NeutralFace.otf');
 }
 
-body {
-  cursor: none;
-  height: 100vh;
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  height: 100vh;
   background-color: #181818;
   color: #f1f1f1;
   font-family: 'Neutral Face Bold';
