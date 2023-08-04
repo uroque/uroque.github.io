@@ -39,18 +39,22 @@ function Header() {
   return (
     <header className="Header">
       <nav className="navbar">
-        {options.map((option) => {
-          return (
-            <a
-              id={`${option.toLowerCase()}`}
-              className="hover-underline-animation"
-              href={`/${option.toLowerCase().split(' ').join('_')}`}
-            >
-              {' '}
-              {option}{' '}
-            </a>
-          );
-        })}
+        <ul>
+          {options.map((option) => {
+            return (
+              <li>
+                <a
+                  id={`${option.toLowerCase()}`}
+                  className="hover-underline-animation"
+                  href={`/${option.toLowerCase().split(' ').join('_')}`}
+                >
+                  {' '}
+                  {option}{' '}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
     </header>
   );

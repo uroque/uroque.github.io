@@ -2,10 +2,14 @@
   margin-top: 2rem;
 }
 
-.navbar {
+.navbar ul{
   display: flex;
   justify-content: space-around;
   flex-shrink: calc(10%);
+}
+
+.navbar li {
+  list-style: none;
 }
 
 .navbar a {
