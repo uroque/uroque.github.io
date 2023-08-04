@@ -1,0 +1,24 @@
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+
+#image-track > .project-image {
+  height: 56vmin;
+  width: 10rem;
+  object-fit: cover;
+  /* object-position: center; */
+  transition: width 0.5s, height 0.5s; 
+}
+
+#image-track > .project-image:hover {
+  height: 60vmin;
+  width: 15rem;
+
+  transition: width 0.5s, height 0.5s; 
+}
