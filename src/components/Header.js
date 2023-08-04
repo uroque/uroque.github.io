@@ -37,13 +37,13 @@ function Header() {
   
 
   return (
-    <div className="Header">
+    <header className="Header">
       <nav className="navbar">
         {options.map((option) => {
           return (
             <a
               id={`${option.toLowerCase()}`}
-              className="hover-underline-animation no-pointer"
+              className="hover-underline-animation"
               href={`/${option.toLowerCase().split(' ').join('_')}`}
             >
               {' '}
@@ -52,7 +52,7 @@ function Header() {
           );
         })}
       </nav>
-    </div>
+    </header>
   );
 }
 

@@ -16,9 +16,15 @@
   transition: width 0.5s, height 0.5s; 
 }
 
-.inner-cursor.grow {
-  width: 25px;
-  height: 25px;
+.inner-cursor.grow-home-center {
+  width: 50px;
+  height: 50px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow-nav {
+  width: 30px;
+  height: 30px;
   transition: width 0.5s, height 0.5s;
 }
 

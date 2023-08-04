@@ -32,7 +32,7 @@ const Cursor = () => {
   useEffect(() => {
     document.addEventListener('mousemove', moveCursor);
 
-    const textElements = document.querySelectorAll('p, span, a, h1, h2');
+    const textElements = document.querySelectorAll('a, span');
 
     textElements.forEach((element) => {
       element.addEventListener('mouseenter', handleMouseEnter);
@@ -45,11 +45,18 @@ const Cursor = () => {
   }, []);
 
   const handleMouseEnter = () => {
-    innerCursorRef.current.classList.add('grow');
+    innerCursorRef.current.classList.add('grow-nav');
+    // if (innerCursorRef.current.tagName === 'A') {
+    //   innerCursorRef.current.classList.add('grow-nav');
+    // }
+
+    // if (innerCursorRef.current.tagName === 'SPAN') {
+    //   innerCursorRef.current.classList.add('grow-text')
+    // }
   };
 
   const handleMouseLeave = () => {
-    innerCursorRef.current.classList.remove('grow');
+    innerCursorRef.current.classList.remove('grow-nav');
   };
 
   return(

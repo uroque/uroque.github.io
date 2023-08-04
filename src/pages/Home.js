@@ -8,11 +8,11 @@ import Footer from '../components/Footer';
 function Home() {
   return (
     <div className="Home">
-      <div className="homeCenter center">
+      <main className="homeCenter center">
         <span>ULISSES</span>
         <span>WEB DEVELOPER</span>
         <span>ROQUE</span>
-      </div>
+      </main>
 
       <Footer />
       {/* <ResponsiveModal /> */}
