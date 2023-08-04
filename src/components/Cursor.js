@@ -32,9 +32,16 @@ const Cursor = () => {
   useEffect(() => {
     document.addEventListener('mousemove', moveCursor);
 
-    const textElements = document.querySelectorAll('a, span, p, h1');
+    const textElements = document.querySelectorAll('a, li, span, p, h1');
 
     textElements.forEach((element) => {
+      element.addEventListener('mouseenter', handleMouseEnter);
+      element.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    const imageElements = document.querySelectorAll('img');
+
+    imageElements.forEach((element) => {
       element.addEventListener('mouseenter', handleMouseEnter);
       element.addEventListener('mouseleave', handleMouseLeave);
     });
@@ -44,19 +51,23 @@ const Cursor = () => {
     };
   }, []);
 
-  const handleMouseEnter = () => {
-    innerCursorRef.current.classList.add('grow-nav');
-    // if (innerCursorRef.current.tagName === 'A') {
-    //   innerCursorRef.current.classList.add('grow-nav');
-    // }
+  const handleMouseEnter = (e) => {
+    const targetTagName = e.target.tagName;
 
-    // if (innerCursorRef.current.tagName === 'SPAN') {
-    //   innerCursorRef.current.classList.add('grow-text')
-    // }
+    if (targetTagName === 'A') {
+      innerCursorRef.current.classList.add('grow-nav');
+    } 
+
+    if (targetTagName === 'P' || targetTagName === "SPAN" || targetTagName === "H1" || targetTagName === "IMG") {
+      innerCursorRef.current.classList.add('grow-text')
+    }
+    
+
   };
 
   const handleMouseLeave = () => {
     innerCursorRef.current.classList.remove('grow-nav');
+    innerCursorRef.current.classList.remove('grow-text');
   };
 
   return(
