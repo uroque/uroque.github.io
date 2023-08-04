@@ -32,7 +32,7 @@ const Cursor = () => {
   useEffect(() => {
     document.addEventListener('mousemove', moveCursor);
 
-    const textElements = document.querySelectorAll('a, span, p');
+    const textElements = document.querySelectorAll('a, span, p, h1');
 
     textElements.forEach((element) => {
       element.addEventListener('mouseenter', handleMouseEnter);
